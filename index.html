@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Самостоятельная работа | ОГЭ информатика</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: linear-gradient(135deg, #f5f0ff 0%, #e8e0ff 100%);
+            font-family: 'Inter', sans-serif;
+            color: #1e1a2f;
+            line-height: 1.5;
+            padding: 2rem;
+        }
+        .container {
+            max-width: 1000px;
+        }
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+            color: #6b4e9e;
+        }
+        .subtitle {
+            color: #5a4a7a;
+            margin-bottom: 2rem;
+            border-bottom: 2px solid #cdb8ff;
+            padding-bottom: 1rem;
+        }
+        .task {
+            margin-bottom: 2.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid #cdb8ff;
+        }
+        .task:last-child {
+            border-bottom: none;
+        }
+        .task-number {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #8b5cf6;
+            margin-bottom: 0.8rem;
+        }
+        .task-text {
+            background: white;
+            padding: 1rem;
+            border-left: 4px solid #8b5cf6;
+            border-radius: 0.5rem;
+            font-family: monospace;
+            font-size: 1rem;
+            line-height: 1.5;
+            margin-bottom: 1rem;
+            white-space: pre-wrap;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        }
+        .task-text p {
+            margin-bottom: 0.5rem;
+        }
+        .task-text code {
+            background: #f0ebff;
+            padding: 0.2rem 0.4rem;
+            border-radius: 0.3rem;
+            color: #6b4e9e;
+        }
+        .download-link {
+            display: inline-block;
+            background: #e9e0ff;
+            border: 1px solid #8b5cf6;
+            color: #6b4e9e;
+            padding: 0.4rem 1rem;
+            border-radius: 2rem;
+            text-decoration: none;
+            font-size: 0.85rem;
+            font-weight: 500;
+            margin-right: 1rem;
+            margin-bottom: 0.8rem;
+            transition: 0.2s;
+        }
+        .download-link:hover {
+            background: #8b5cf6;
+            color: white;
+        }
+        .solution-btn {
+            background: #f0ebff;
+            border: 1px solid #8b5cf6;
+            color: #6b4e9e;
+            padding: 0.4rem 1rem;
+            border-radius: 2rem;
+            cursor: pointer;
+            font-size: 0.85rem;
+            font-weight: 500;
+            transition: 0.2s;
+        }
+        .solution-btn:hover {
+            background: #8b5cf6;
+            color: white;
+        }
+        .solution {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease-out;
+            margin-top: 0.8rem;
+        }
+        .solution.show {
+            max-height: 500px;
+            transition: max-height 0.5s ease-in;
+        }
+        .video-wrapper video {
+            width: 100%;
+            height: auto;
+            max-width: 100%;
+            border-radius: 0.75rem;
+        }
+        .answer {
+            background: #f0ebff;
+            padding: 0.8rem;
+            border-radius: 0.5rem;
+            color: #6b4e9e;
+            font-size: 0.9rem;
+        }
+        .answer pre {
+            background: white;
+            padding: 0.5rem;
+            border-radius: 0.5rem;
+            overflow-x: auto;
+            margin-top: 0.5rem;
+            font-family: monospace;
+            font-size: 0.85rem;
+        }
+        .back-link {
+            display: inline-block;
+            color: #8b5cf6;
+            text-decoration: none;
+            margin-bottom: 1.5rem;
+            font-size: 0.9rem;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        footer {
+            text-align: left;
+            margin-top: 2rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid #cdb8ff;
+            color: #8b7aa8;
+            font-size: 0.85rem;
+        }
+        hr {
+            border: none;
+            height: 1px;
+            background: #cdb8ff;
+            margin: 1rem 0;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <a href="https://Vasilekyanina-source.github.io/" class="back-link">← На главную</a>
+    <a href="https://Vasilekyanina-source.github.io/Informatics1/index.html" class="back-link">← К урокам</a>
+    <h1>📝 Задания 12 для самостоятельной работы</h1>
+    <div class="subtitle">Здесь представлены различные 12 задания для тренировки. Файлы, необходимые для выполнения, доступны для скачивания — под каждым заданием. Если вы хотите проверить свое решение или затрудняетесь в решении, то можно воспользоваться видеоразбором, которое можно открыть по кнопке после каждого задания.</div>
+
+    <!-- ЗАДАНИЕ 1 -->
+    <div class="task">
+        <div class="task-number">Задание 1</div>
+        <div class="task-text">Сколько файлов с расширением <b>.rtf</b> содержится в подкаталогах каталога <b>DEMO-12</b>? В ответе укажите только число.
+        </div>
+        <a href="https://disk.yandex.ru/d/RVZisaYGQu91JA" class="download-link" download>📎 Скачать файлы для задания 1</a>
+        <button class="solution-btn" data-target="sol1">🎬 Показать решение</button>
+        <div id="sol1" class="solution">
+            <div class="video-wrapper">
+                <video controls>
+                    <source src="1 задание.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </div>
+    <!-- ЗАДАНИЕ 2 -->
+    <div class="task">
+        <div class="task-number">Задание 2</div>
+        <div class="task-text">Сколько файлов с расширением <b>.htm</b> содержится в подкаталогах каталога <b>DEMO-12</b>? В ответе укажите только число
+            
+        </div>
+        <a href="https://disk.yandex.ru/d/RVZisaYGQu91JA" class="download-link" download>📎 Скачать файлы для задания 2</a>
+        <button class="solution-btn" data-target="sol2">🎬 Показать решение</button>
+        <div id="sol2" class="solution">
+            <div class="video-wrapper">
+                <video controls>
+                    <source src="2 задание.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </div>
+    <!-- ЗАДАНИЕ 3 -->
+    <div class="task">
+        <div class="task-number">Задание 3</div>
+        <div class="task-text">Сколько файлов c расширением <b>.pdf</b> содержится в подкаталогах <b>Есенин, Маяковский и Некрасов</b> каталога <b>DEMO-12/Поэзия</b>? В ответе укажите только число.
+            
+        </div>
+        <a href="https://disk.yandex.ru/d/RVZisaYGQu91JA" class="download-link" download>📎 Скачать файлы для задания 3</a>
+        <button class="solution-btn" data-target="sol3">🎬 Показать решение</button>
+        <div id="sol3" class="solution">
+            <div class="video-wrapper">
+                <video controls>
+                    <source src="3 задание.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </div>
+    <!-- ЗАДАНИЕ 4 -->
+    <div class="task">
+        <div class="task-number">Задание 4</div>
+        <div class="task-text">Сколько файлов с расширением <b>.pdf</b> содержится в подкаталогах каталога <b>DEMO-12</b>? В ответе укажите только число.   
+        </div>
+        <a href="https://disk.yandex.ru/d/RVZisaYGQu91JA" class="download-link" download>📎 Скачать файлы для задания 4</a>
+        <button class="solution-btn" data-target="sol4">🎬 Показать решение</button>
+        <div id="sol4" class="solution">
+            <div class="video-wrapper">
+                <video controls>
+                    <source src="4 задание.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </div>
+    <!-- ЗАДАНИЕ 5 -->
+    <div class="task">
+        <div class="task-number">Задание 5</div>
+        <div class="task-text">Сколько файлов c расширением <b>.txt</b> содержится в подкаталогах <b>Есенин, Лермонтов и Маяковский</b> каталога <b>DEMO-12/Поэзия</b>? В ответе укажите только число.
+        </div>
+        <a href="https://disk.yandex.ru/d/RVZisaYGQu91JA" class="download-link" download>📎 Скачать файлы для задания 5</a>
+        <button class="solution-btn" data-target="sol5">🎬 Показать решение</button>
+        <div id="sol5" class="solution">
+            <div class="video-wrapper">
+                <video controls>
+                    <source src="5 задание.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </div>
+    <!-- ЗАДАНИЕ 6 -->
+    <div class="task">
+        <div class="task-number">Задание 6</div>
+        <div class="task-text">Сколько файлов c расширением <b>.htm</b> содержится в подкаталогах <b>Блок, Маяковский и Некрасов</b> каталога <b>DEMO-12/Поэзия</b>? В ответе укажите только число.
+        </div>
+        <a href="https://disk.yandex.ru/d/RVZisaYGQu91JA" class="download-link" download>📎 Скачать файлы для задания 6</a>
+        <button class="solution-btn" data-target="sol6">🎬 Показать решение</button>
+        <div id="sol6" class="solution">
+            <div class="video-wrapper">
+                <video controls>
+                    <source src="6 задание.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </div>
+    <!-- ЗАДАНИЕ 7 -->
+    <div class="task">
+        <div class="task-number">Задание 7</div>
+        <div class="task-text">Сколько файлов c расширением <b>.htm</b> содержится в подкаталогах <b>Есенин и Маяковский</b> каталога <b>DEMO-12/Поэзия</b>? В ответе укажите только число. 
+        </div>
+        <a href="https://disk.yandex.ru/d/RVZisaYGQu91JA" class="download-link" download>📎 Скачать файлы для задания 7</a>
+        <button class="solution-btn" data-target="sol7">🎬 Показать решение</button>
+        <div id="sol7" class="solution">
+            <div class="video-wrapper">
+                <video controls>
+                    <source src="7 задание.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </div>
+    <!-- ЗАДАНИЕ 8 -->
+    <div class="task">
+        <div class="task-number">Задание 8</div>
+        <div class="task-text">Сколько файлов c расширением <b>.htm</b> содержится в подкаталогах <b>Блок, Есенин и Пушкин</b> каталога <b>DEMO-12/Поэзия</b>? В ответе укажите только число.
+        </div>
+        <a href="https://disk.yandex.ru/d/RVZisaYGQu91JA" class="download-link" download>📎 Скачать файлы для задания 8</a>
+        <button class="solution-btn" data-target="sol8">🎬 Показать решение</button>
+        <div id="sol8" class="solution">
+            <div class="video-wrapper">
+                <video controls>
+                    <source src="8 задание.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </div>
+    <!-- ЗАДАНИЕ 9 -->
+    <div class="task">
+        <div class="task-number">Задание 9</div>
+        <div class="task-text">В одном из произведений <b>Н.В. Гоголя</b>, текст которого приведён в подкаталоге каталога <b>Проза</b>, главный герой играет с одним из персонажей в шашки. С помощью поисковых средств операционной системы и текстового редактора или браузера выясните фамилию соперника главного героя по шашечной партии.
+        </div>
+        <a href="https://disk.yandex.ru/d/RVZisaYGQu91JA" class="download-link" download>📎 Скачать файлы для задания 9</a>
+        <button class="solution-btn" data-target="sol9">🎬 Показать решение</button>
+        <div id="sol9" class="solution">
+            <div class="video-wrapper">
+                <video controls>
+                    <source src="9.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </div>
+    <!-- ЗАДАНИЕ 10 -->
+    <div class="task">
+        <div class="task-number">Задание 10</div>
+        <div class="task-text">В одном из произведений <b>А.С. Пушкина</b>, текст которого приведён в подкаталоге каталога <b>Проза</b>, упоминается некая Курочкина. С помощью поисковых средств операционной системы и текстового редактора или браузера выясните её имя.
+        </div>
+        <a href="https://disk.yandex.ru/d/RVZisaYGQu91JA" class="download-link" download>📎 Скачать файлы для задания 10</a>
+        <button class="solution-btn" data-target="sol10">🎬 Показать решение</button>
+        <div id="sol10" class="solution">
+            <div class="video-wrapper">
+                <video controls>
+                    <source src="10.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </div>
+    <!-- ЗАДАНИЕ 11 -->
+    <div class="task">
+        <div class="task-number">Задание 11</div>
+        <div class="task-text">В одном из произведений <b>А.С. Пушкина</b>, текст которого приведён в подкаталоге каталога <b>Проза</b>, рассказывается о том, что для героини заказали «пару лаптей». С помощью поисковых средств операционной системы и текстового редактора выясните имя мастера, у которого заказали лапти для героини.
+        </div>
+        <a href="https://disk.yandex.ru/d/RVZisaYGQu91JA" class="download-link" download>📎 Скачать файлы для задания 11</a>
+        <button class="solution-btn" data-target="sol11">🎬 Показать решение</button>
+        <div id="sol11" class="solution">
+            <div class="video-wrapper">
+                <video controls>
+                    <source src="11.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </div>
+    <!-- ЗАДАНИЕ 12 -->
+    <div class="task">
+        <div class="task-number">Задание 12</div>
+        <div class="task-text">В одном из произведений <b>А.С. Пушкина</b>, текст которого приведён в подкаталоге каталога <b>Проза</b>, есть персонаж попадья Федотовна. С помощью поисковых средств операционной системы и текстового редактора или браузера выясните название этого произведения
+        </div>
+        <a href="https://disk.yandex.ru/d/RVZisaYGQu91JA" class="download-link" download>📎 Скачать файлы для задания 12</a>
+        <button class="solution-btn" data-target="sol12">🎬 Показать решение</button>
+        <div id="sol12" class="solution">
+            <div class="video-wrapper">
+                <video controls>
+                    <source src="12.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </div>
+    <!-- ЗАДАНИЕ 13 -->
+    <div class="task">
+        <div class="task-number">Задание 13</div>
+        <div class="task-text">В одном из произведений <b>Н.В. Гоголя</b>, текст которого приведён в подкаталоге каталога <b>Проза</b>, в одном из эпизодов рассказывается о членах одной семьи, которые предпочитали носить исключительно сапоги, меняя подметки три раза в год. С помощью поисковых средств операционной системы и текстового редактора определите фамилию главы этой семьи.
+        </div>
+        <a href="https://disk.yandex.ru/d/RVZisaYGQu91JA" class="download-link" download>📎 Скачать файлы для задания 13</a>
+        <button class="solution-btn" data-target="sol13">🎬 Показать решение</button>
+        <div id="sol13" class="solution">
+            <div class="video-wrapper">
+                <video controls>
+                    <source src="13.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </div>
+    <!-- ЗАДАНИЕ 14 -->
+    <div class="task">
+        <div class="task-number">Задание 14</div>
+        <div class="task-text">В одном из произведений <b>А.П. Чехова</b>, текст которого приведён в подкаталоге каталога <b>Проза</b>, есть герой с фамилией Елдырин. С помощью поисковых средств операционной системы и текстового редактора или браузера выясните должность этого героя.
+        </div>
+        <a href="https://disk.yandex.ru/d/RVZisaYGQu91JA" class="download-link" download>📎 Скачать файлы для задания 14</a>
+        <button class="solution-btn" data-target="sol14">🎬 Показать решение</button>
+        <div id="sol14" class="solution">
+            <div class="video-wrapper">
+                <video controls>
+                    <source src="14.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </div>
+    <!-- ЗАДАНИЕ 15 -->
+    <div class="task">
+        <div class="task-number">Задание 15</div>
+        <div class="task-text">В одном из произведений <b>М.Ю. Лермонтова</b>, текст которого приведён в подкаталоге каталога <b>Проза</b>, упоминается о Койшаурской долине. С помощью поисковых средств операционной системы и текстового редактора определите город, из которого был родом русский извозчик, первым спустившийся на повозке по дороге между пропастью и утёсом.
+        </div>
+        <a href="https://disk.yandex.ru/d/RVZisaYGQu91JA" class="download-link" download>📎 Скачать файлы для задания 15</a>
+        <button class="solution-btn" data-target="sol15">🎬 Показать решение</button>
+        <div id="sol15" class="solution">
+            <div class="video-wrapper">
+                <video controls>
+                    <source src="15.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </div>
+    <!-- ЗАДАНИЕ 16 -->
+    <div class="task">
+        <div class="task-number">Задание 16</div>
+        <div class="task-text">В одном из произведений <b>А.С. Пушкина</b>, текст которого приведён в подкаталоге каталога <b>Проза</b>, служанка вместо слова «доктор» использует слово «дохтур». С помощью поисковых средств операционной системы и текстового редактора или браузера выясните имя её собеседницы.
+        </div>
+        <a href="https://disk.yandex.ru/d/RVZisaYGQu91JA" class="download-link" download>📎 Скачать файлы для задания 16</a>
+        <button class="solution-btn" data-target="sol16">🎬 Показать решение</button>
+        <div id="sol16" class="solution">
+            <div class="video-wrapper">
+                <video controls>
+                    <source src="16.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </div>
+    <!-- ЗАДАНИЕ 17 -->
+    <div class="task">
+        <div class="task-number">Задание 17</div>
+        <div class="task-text">В одном из произведений <b>А.П. Чехова</b>, текст которого приведён в подкаталоге каталога <b>Проза</b>, присутствует эпизод, в котором один из героев послал в «Ниву» статью «Интересный случай многоплодия среди крестьянского народонаселения». С помощью поисковых средств операционной системы и текстового редактора выясните фамилию этого героя.
+        </div>
+        <a href="https://disk.yandex.ru/d/RVZisaYGQu91JA" class="download-link" download>📎 Скачать файлы для задания 17</a>
+        <button class="solution-btn" data-target="sol17">🎬 Показать решение</button>
+        <div id="sol17" class="solution">
+            <div class="video-wrapper">
+                <video controls>
+                    <source src="17.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </div>
+<footer>
+    <p>КодОГЭ — подготовка к экзамену</p>
+</footer>
+
+<script>
+    document.querySelectorAll('.solution-btn').forEach(btn => {
+        btn.addEventListener('click', function() {
+            const target = document.getElementById(this.dataset.target);
+            if (target) {
+                target.classList.toggle('show');
+                this.textContent = target.classList.contains('show') ? '🎬 Скрыть решение' : '🎬 Показать решение';
+            }
+        });
+    });
+</script>
+</body>
+</html>
