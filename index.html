@@ -112,11 +112,42 @@
             max-height: 500px;
             transition: max-height 0.5s ease-in;
         }
-        .video-wrapper video {
+                /* Контейнер для видео — делает видео адаптивным */
+        .video-wrapper {
+            position: relative;
             width: 100%;
-            height: auto;
-            max-width: 100%;
+            padding-bottom: 56.25%; /* 16:9 пропорция (16/9 = 1.777) */
+            height: 0;
+            overflow: hidden;
             border-radius: 0.75rem;
+            background: #000;
+        }
+        
+        /* Сам iframe или video */
+        .video-wrapper iframe,
+        .video-wrapper video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100% !important;
+            height: 100% !important;
+            border: none;
+        }
+        
+        /* Для видео из ВК с фиксированными размерами — переопределяем */
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100% !important;
+            height: 100% !important;
+        }
+        
+        /* Дополнительно для телефонов */
+        @media (max-width: 768px) {
+            .video-wrapper {
+                border-radius: 0.5rem;
+            }
         }
         .answer {
             background: #f0ebff;
